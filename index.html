@@ -13,26 +13,35 @@
             overflow: hidden; 
             background-color: #ffffff;
         }
-        .wrapper {
-            position: relative;
+
+        .container {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 100vh;
-            overflow: hidden;
+            height: 100%;
         }
+
         iframe { 
-            position: absolute; 
-            /* Hacemos que el iframe sea un poco más alto para empujar la marca de agua hacia abajo */
             width: 100%; 
-            height: 110%; 
-            top: 0; 
-            left: 0; 
-            border: none; 
+            height: 100%; 
+            border: none;
+            /* El secreto: forzamos a que el contenido ignore las restricciones de Canva */
+            display: block;
+        }
+
+        /* Ajuste para PC: Si el diseño se ve con bordes, este contenedor lo fuerza */
+        @media (min-width: 1024px) {
+            iframe {
+                height: 108%; /* Un poco más alto para esconder la barra de abajo */
+                margin-top: -1%; /* Sube un poco para centrar tras el estiramiento */
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="wrapper">
+    <div class="container">
         <iframe loading="lazy" 
             src="https://www.canva.com/design/DAG_TMNBf30/kJjacf9FEGE1kLmYo4-fbA/view?embed" 
             allowfullscreen="allowfullscreen" allow="fullscreen">
