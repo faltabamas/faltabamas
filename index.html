@@ -1,255 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet" />
+<html lang="es">
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Faltaba Mas</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav__header">
-        <div class="nav__logo">
-          <a href="#" class="logo">Faltaba Más </a>
-        </div>
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-line"></i>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faltaba Más</title>
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="public/style.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        <img src="public/img/logoFM.png" alt="Logo Faltaba Más" class="logo-img">
+        <span class="logo-text">Faltaba Más</span>
       </div>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="#home">INICIO</a></li>
-        <li><a href="#about">FORMATOS</a></li>
-        <li><a href="#tour">AUDIENCIA</a></li>
-        <li><a href="#package">SOBRE FALTABA MÁS</a></li>
-        <li><a href="#contact">CONTACTO</a></li>
-        <li><a href="#">CREÁ UNA PUBLICIDAD</a></li>
+
+      <button class="navbar__toggle" id="menu-btn" aria-label="Abrir menú">
+        <i class="ri-menu-line"></i>
+      </button>
+
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#formatos">Formatos</a></li>
+        <li><a href="#audiencia">Audiencia</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <div class="nav__btns">
-        <button class="btn">SUMÁ TU MARCA</button>
-      </div>
-    </nav>
 
-    <header id="home">
-      <div class="header__container">
-        <div class="header__content">
-            <p>HACÉ QUE SANTA FÉ TE CONOZCA</p>
-          <h1>Tu marca en Faltaba Más</h1>
-          <div class="header__btns">
-            <button class="btn">Sumá tu marca</button>
-            <a href="#">
-              <span><i class="ri-play-circle-fill"></i></span>
-            </a>
-          </div>
-        </div>
-        <div class="header__image">
-          <img src="img/bus.png" alt="header" />
-        </div>
+      <div class="navbar__cta">
+        <a href="https://wa.me/5493425104491" target="_blank" class="btn">
+          Sumá tu marca
+        </a>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <section class="section__container destination__container" id="about">
-      <h2 class="section__header">Formatos disponibles</h2>
-      <p class="section__description">
-        Estas son las opciones más elegidas para mostrarse en Faltaba Más
-      </p>
-      <div class="destination__grid">
-        <div class="destination__card">
-          <img src="img/card.jpg" alt="destination" />
-          <div class="destination__card__details">
-            <div>
-              <h4>Carrusel de Instagram, integrado en el feed</h4>
-              <p>Diseñado por nuestro equipo, esta opcion es la favorita de nuestra audiencia</p>
-            </div>
-          </div>
-        </div>
-        <div class="destination__card">
-          <img src="img/card2.jpg" alt="destination" />
-          <div class="destination__card__details">
-            <div>
-              <h4>Historias de instagram</h4>
-              <p>formato video o flyer, disponibles durante 24hs</p>
-            </div>
-          </div>
-        </div>
-        <div class="destination__card">
-          <img src="img/card3.webp" alt="destination" />
-          <div class="destination__card__details">
-            <div>
-              <h4>Formato personalizado</h4>
-              <p>¿Tu marca necesita otra cosa? Ponete en contacto!</p>
-            </div>
-          </div>
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="home">
+    <div class="hero__container section">
+      <div class="hero__content">
+        <p class="hero__subtitle">HACÉ QUE SANTA FE TE CONOZCA</p>
+        <h1 class="hero__title">Tu marca en Faltaba Más</h1>
+
+        <div class="hero__actions">
+          <a href="https://wa.me/5493425104491" target="_blank" class="btn">
+            Sumá tu marca
+          </a>
+          <a href="#" class="hero__play">
+            <!-- <i class="ri-play-circle-fill"></i> -->
+          </a>
         </div>
       </div>
-    </section>
 
-    <section class="section__container journey__container" id="tour">
-      <h2 class="section__header">Mostrá tu marca en Santa Fe Capital</h2>
-      <p class="section__description">
-        Estos son algunos datos de nuestra audiencia
-      </p>
-      <div class="journey__grid">
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-eye-line"></i></span>
-            <h4>Alcance mensual</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-team-line"></i></span>
-            <h4>696.738 visualizaciones en los últimos 30 días</h4>
-            <p>
-              En los últimos 30 días, el contenido de Faltaba Más tuvo 696.738 visualizaciones, 
-              alcanzó a 196.319 cuentas individuales y promedió 72.000 visualizaciones por publicación. 
-              Los datos corresponden a métricas de Instagram y reflejan el consumo real del contenido en la plataforma.
-            </p>
-          </div>
-        </div>
-
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-landscape-fill"></i></span>
-            <h4>Ubicación de la audiencia</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-landscape-fill"></i></span>
-            <h4>¿Desde donde se ve tu marca?</h4>
-            <p>
-              La mayor parte de la audiencia está en Santa Fe Capital y Santo Tomé,
-              con alcance adicional en Rosario y Gálvez, 
-              según estadísticas de Instagram de los últimos 30 días.
-            </p>
-          </div>
-        </div>
-
-        <div class="journey__card">
-          <div class="journey__card__bg">
-            <span><i class="ri-map-2-line"></i></span>
-            <h4>Distribución por edad</h4>
-          </div>
-          <div class="journey__card__content">
-            <span><i class="ri-map-2-line"></i></span>
-            <h4>Audiencia activa para marcas que buscan alcance local</h4>
-            <p>
-              El rango de edad predominante es 25 a 34 años.
-              Le siguen los grupos de 18 a 24, 35 a 44 y 45 a 54 años,
-              según estadísticas de Instagram de los últimos 30 días.
-            </p>
-          </div>
-        </div>
+      <div class="hero__image">
+        <img src="public/img/cabecera.png" alt="Puente Colgante Santa Fe">
       </div>
-    </section>
+    </div>
+  </header>
 
-    <section class="section__container showcase__container" id="package">
-      <div class="showcase__image">
-        <img src="img/showcase.webp" alt="showcase" />
+  <!-- ================= FORMATOS ================= -->
+  <section class="section" id="formatos">
+    <h2 class="section__title">Formatos disponibles</h2>
+    <p class="section__subtitle">
+      Opciones más elegidas para mostrarse en Faltaba Más
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <img src="public/img/formato_Carrusel.png" alt="Carrusel" class="card__img">
+        <div class="card__content">
+          <h4>Carrusel de Instagram</h4>
+          <p>Integrado en el feed, diseñado por nuestro equipo.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="public/img/formato_historia.png" alt="Historias" class="card__img">
+        <div class="card__content">
+          <h4>Historias de Instagram</h4>
+          <p>Formato video o flyer, disponibles durante 24hs.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="public/img/formato_personalizado.png" alt="Personalizado" class="card__img">
+        <div class="card__content">
+          <h4>Formato personalizado</h4>
+          <p>¿Tu marca necesita otra cosa? Ponete en contacto.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= AUDIENCIA ================= -->
+  <section class="section" id="audiencia">
+    <h2 class="section__title">Mostrá tu marca en Santa Fe Capital</h2>
+
+    <div class="grid">
+      <div class="stat">
+        <i class="ri-eye-line"></i>
+        <h4>Alcance mensual</h4>
+        <p>696.738 visualizaciones en los últimos 30 días.</p>
       </div>
+
+      <div class="stat">
+        <i class="ri-landscape-fill"></i>
+        <h4>Ubicación</h4>
+        <p>Santa Fe Capital, Santo Tomé, Rosario y Gálvez.</p>
+      </div>
+
+      <div class="stat">
+        <i class="ri-team-line"></i>
+        <h4>Edad</h4>
+        <p>Predominio de 25 a 34 años. Audiencia activa local.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section class="section showcase" id="sobre">
+    <div class="showcase__grid">
+      <!-- <img src="img/modoZen.png" alt="Sobre Faltaba Más" class="showcase__img"> -->
+
       <div class="showcase__content">
-        <h4>Sobre Faltaba Más</h4>
+        <h3>Sobre Faltaba Más</h3>
         <p>
-          Faltaba Más es un medio digital local que informa sobre lo que pasa en Santa Fe,
-          con foco en la claridad y la comprensión de la información. Actualmente el contenido se
-          desarrolla a través de Instagram, donde se concentra la audiencia y el alcance.
-          El uso de memes forma parte de una decisión editorial orientada a facilitar la lectura
-          y el acceso a la información. Este recurso no reemplaza los datos ni el rigor periodístico:
-          acompaña los contenidos y permite ampliar su llegada.
+          Medio digital local con foco en la claridad y el uso de memes
+          como recurso editorial para facilitar el acceso a la información.
         </p>
-        <p>
-          Las propuestas publicitarias se integran al contenido respetando este enfoque editorial y
-          a la comunidad que lo consume. El proyecto se encuentra en una etapa de crecimiento,
-          con el objetivo de expandirse a otras plataformas, manteniendo el mismo criterio de trabajo.
-        <div class="showcase__btn">
-          <button class="btn">
-            Mostrá tu marca en Faltaba Más
-            <span><i class="ri-arrow-right-line"></i></span>
-          </button>
-        </div>
-      </div>
-    </section>
 
-    <section class="section__container banner__container">
-      <div class="banner__card">
-        <h4>196k+</h4>
-        <p>Cuentas alcanzadas</p>
+        <a href="https://wa.me/5493425104491" target="_blank" class="btn btn--wide">
+          Mostrá tu marca en Faltaba Más
+          <i class="ri-arrow-right-line"></i>
+        </a>
       </div>
-      <div class="banner__card">
-        <h4>100%</h4>
-        <p>Audiencia local</p>
-      </div>
-      <div class="banner__card">
-        <h4>∞</h4>
-        <p>Posibilidades</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section__container discover__container">
-      <h2 class="section__header">
-        Descubrí una nueva forma de llegar a tu público objetivo
-      </h2>
-      <p class="section__description">
-        ¿Necesitas un presupuesto o tenes una consulta? 
-        La forma más rapida de ponernos en contacto es 
-        por los mensajes de instagram! dejanos el tuyo en @faltabamas.sf
-   <section class="section__container discover__container">
-     
-    <footer id="contact">
-
-    <footer id="contact">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="footer__logo">
-            <a href="#" class="logo">Faltaba Más</a>
-          </div>
-          <p>
-            Faltaba Más es el espacio publicitario que necesitabas
-            Ponete en contacto!
-          </p>
-          <ul class="footer__socials">
-            <li>
-              <a href="#!"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#!"><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href="#!"><i class="ri-youtube-line"></i></a>
-            </li>
-          </ul>
-        </div>
-      <div class="footer__bar">
-        Copyright © 2025. All rights reserved.
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contacto">
+    <div class="section">
+      <div class="footer__logo">
+        <img src="public/img/logoFM.png" alt="Faltaba Más">
+        <span>Faltaba Más</span>
       </div>
-    </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  </body>
+
+      <div class="footer__socials">
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-youtube-line"></i></a>
+      </div>
+
+      <p class="footer__copy">
+        © 2025 Faltaba Más. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="public/main.js"></script>
+
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
